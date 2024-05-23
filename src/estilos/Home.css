@@ -1,0 +1,85 @@
+.home-container {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    background-color: white;
+  }
+  
+  .app-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  
+  .navigation .nav-button {
+    margin-left: 30px;
+    padding: 0;
+    background: none;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .navigation .nav-button:hover {
+    text-decoration: underline;
+  }
+  
+  .about-us {
+    display: flex;
+    justify-content: space-between; /* Asegura que los elementos se distribuyan */
+    align-items: center;
+    padding: 20px 20px 20px 60px;
+    flex-grow: 1;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    color: #888;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .about-image {
+    flex: 1.5;
+    text-align: center;
+    margin-left: 20px; /* Ajusta este valor según sea necesario */
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .footer {
+    display: flex;
+    text-align: center;
+    padding: 30px 60px;
+    background-color: white;
+    border-top: 1px solid #adadad;
+  }
+  
