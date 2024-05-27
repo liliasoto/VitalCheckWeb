@@ -1,5 +1,5 @@
 import React from 'react';
-import '../estilos/Home.css'; // Importa los estilos
+import '../estilos/Home.css';
 import { useNavigate } from 'react-router-dom';
 import salud from '../Imagenes/primera.jpg';
 
