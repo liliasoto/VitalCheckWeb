@@ -1,101 +1,199 @@
 .dashboard-container {
-    background-color: white;
-    font-family: Arial, sans-serif;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    min-width: 100vw;
-    padding: 0;
-    margin: 0;
-  }
-  
+  background-color: white;
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.headerr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 10px 60px;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.home-button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 3fr;
+  gap: 30px;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.dashboard-box {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.small-box {
+  grid-row: span 1;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.nivell {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.indicator {
+  color: grey;
+  margin: 0;
+  padding: 0;
+}
+
+.titulo-cuadro-abajo {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.chart-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
   .headerr {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    border-bottom: 1px solid #e0e0e0;
-    margin: 10px 60px;
+    margin: 10px 20px;
+    flex-direction: column;
   }
-  
+
   .header-title {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .home-button {
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
-  .dashboard-content {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-  }
-  
-  .dashboard-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 3fr;
-    gap: 30px;
-    flex: 1;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .dashboard-box {
-    background-color: white;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  
-  .small-box {
-    grid-row: span 1;
-  }
-  
-  h2 {
-    font-size: 16px;
     margin-bottom: 10px;
   }
 
-  .nivell{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 20px;
   }
-  
-  .indicator {
-    color: grey;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .titulo-cuadro-abajo {
-    font-size: 20px;
-    margin-bottom: 5px; 
+
+  .small-box {
+    grid-row: span 1;
   }
 
   .chart-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: auto;
+    height: 300px;
   }
+}
+
+@media (max-width: 768px) {
+  .headerr {
+    margin: 10px 10px;
+    padding: 10px;
+  }
+
+  .header-title {
+    font-size: 16px;
+  }
+
+  .home-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .dashboard-content {
+    padding: 10px;
+  }
+
+  .dashboard-box {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  .nivell {
+    font-size: 32px;
+  }
+
+  .chart-container {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerr {
+    margin: 10px 5px;
+    padding: 5px;
+  }
+
+  .header-title {
+    font-size: 14px;
+  }
+
+  .home-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .dashboard-content {
+    padding: 5px;
+  }
+
+  .dashboard-box {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 12px;
+  }
+
+  .nivell {
+    font-size: 24px;
+  }
+
+  .chart-container {
+    height: 200px;
+  }
+}
