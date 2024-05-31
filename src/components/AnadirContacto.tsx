@@ -80,7 +80,6 @@ const AnadirContacto: React.FC = () => {
         alert(result);
         setError('');
         alert('Contacto agregado exitosamente');
-        // Aquí puedes limpiar el formulario si lo deseas
         setFormState({
           nombre: '',
           apellido: '',
